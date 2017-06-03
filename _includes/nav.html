@@ -3,8 +3,8 @@
 
 <nav>
 	<ul>
-		<li><a href="{{site.baseurl}}/" class="current">Home</a></li>
-		<li><a href="{{site.baseurl}}/news.html">News</a></li>
+		<li><a href="{{site.baseurl}}/" class="{% if page.url == '/index.html' %}current{% endif %}">Home</a></li>
+		<li><a href="{{site.baseurl}}/news.html" class="{% if page.url == '/index.html' %}current{% endif %}">News</a></li>
 		<li><a href="{{site.baseurl}}/planet.html">Planet</a></li>
 	</ul>
 </nav>
